@@ -1,0 +1,59 @@
+main{
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .form-container{
+        min-width: 350px;
+
+        display:flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        p {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #aaa;
+
+            a {
+                color: #e1034d;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .f{
+        display:flex;
+        flex-direction: column;
+        gap: 0.75rem;
+
+        .button {
+            margin-top: 0.5rem;
+        }
+    }
+
+
+    .input-group{
+        display:flex;
+        flex-direction:column;
+
+        
+        gap: 0.5rem
+
+      
+    }
+
+      .inputs{
+            border:none;
+            outline:none;
+            padding-inline: 1rem;
+            padding-block:0.75rem;
+            border-radius: 0.5rem;
+            gap: 1rem;
+            
+        }
+        
+}
