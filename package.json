@@ -5,6 +5,7 @@
   "description": "",
   "main": "BACKEND/server.js",
   "scripts": {
+    "start": "node BACKEND/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon BACKEND/server.js"
   },
