@@ -2,7 +2,7 @@ services:
   # Backend Web Service
   - type: web
     name: gen-ai-resume-backend
-    env: docker
+    runtime: docker
     dockerfilePath: ./Dockerfile
     plan: free
     healthCheckPath: /
@@ -19,11 +19,10 @@ services:
   # Frontend Static Site
   - type: web
     name: gen-ai-resume-frontend
-    env: static
+    runtime: static
     rootDir: Frontend
     buildCommand: npm install && npm run build
     staticPublishPath: dist
-    plan: free
     routes:
       - type: rewrite
         source: /*
